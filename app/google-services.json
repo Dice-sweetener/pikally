@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "675448063476",
+    "firebase_url": "https://pikally-13754.firebaseio.com",
+    "project_id": "pikally-13754",
+    "storage_bucket": "pikally-13754.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675448063476:android:66ea7b4416e1ca10",
+        "android_client_info": {
+          "package_name": "com.pikally"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675448063476-8nuvmrkrm6c1d7g5mpjqq2gsbd272flv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pikally",
+            "certificate_hash": "a87c6fec3791a42bc5b091b8222c9949595f0748"
+          }
+        },
+        {
+          "client_id": "675448063476-j9dshp9dqsfj15hc862g22ejf3m0so51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmewb7vBSLK1YaZqZSAFQ64VqTQAIWPrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675448063476-j9dshp9dqsfj15hc862g22ejf3m0so51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

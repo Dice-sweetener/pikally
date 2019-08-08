@@ -1,0 +1,42 @@
+/*
+ * Copyright 2000-2014 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package standardDsls
+
+def gdslScriptContext = context(scope: scriptScope(), filetypes:['gdsl'])
+
+contributor([gdslScriptContext]) {
+  method name: "context", params: [args: [:]], type: "java.lang.Object"
+  method name: "context", params: [:], type: "java.lang.Object"
+  method name: "contributor", params: [contexts: "java.util.List", body: {}], type: void
+  method name: "contributor", params: [contexts: "java.util.Map", body: {}], type: void
+  method name: "contributor", params: [contexts: "java.lang.Object", body: {}], type: void
+  method name: "contribute", params: [pointcut: "Pointcut", body: {}], type: void
+  method name: "scriptSuperClass", params: [args: [pattern: 'java.lang.String', superClass: 'java.lang.String']]
+
+  method name: "currentType", params: [qName: String.name], type: "Pointcut", doc:'Matches when the current (qualifier or this) type is a subtype of the type described by the parameter'
+
+  method name: "category", params: [categoryClass: "java.lang.String", isStatic:"java.lang.Boolean"], type: void
+  method name: "category", params: [categoryClass: "java.lang.String"], type: void
+
+  method name: "supportsVersion", params: [version: "java.lang.String"], type: boolean
+
+  def version = [
+          parameter(name: 'dsl', type: String.name),
+          parameter(name: 'intellij', type: String.name),
+  ]
+  method name: "supportsVersion", namedParams: version, type: boolean
+  method name: "assertVersion", namedParams: versio

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.uploadFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload images here"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Will recieve a price quote in "
+        android:textSize="18sp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="70dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="our chats in a short while"
+        android:textSize="18sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="90dp"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="120dp"
+        android:text="Select files to Upload"
+        android:background="@drawable/upload_btn"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/image1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="File Number1.CR2"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="210dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/image1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="250dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Number2.jpg"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="260dp"/>
+
+</FrameLayout>
